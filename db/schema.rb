@@ -11,6 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150426155718) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "category_name"
+  end
+
+  create_table "gift_categories", force: :cascade do |t|
+    t.integer "gift_id"
+    t.integer "category_id"
+  end
+
+  create_table "gifts", force: :cascade do |t|
+    t.string  "giftname"
+    t.string  "photo"
+    t.string  "url"
+    t.integer "price"
+  end
+
+  create_table "user_gifts", force: :cascade do |t|
+    t.integer "gift_id"
+    t.integer "user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+  end
 
 end
