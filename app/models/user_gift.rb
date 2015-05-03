@@ -1,3 +1,4 @@
 class UserGift < ActiveRecord::Base
-belongs_to :user, :gift
+belongs_to :user
+belongs_to :gift
 end
