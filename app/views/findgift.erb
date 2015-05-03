@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Find Gift</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+  <h1>Find a Gift</h1>
+
+      <h2>Items</h2>
+      <% @items.each do |item| %>
+      <img src="<%= item.image_url %>">
+      <h3><a href="/items/<%= item.id %>"><%= item.name %></a></h3>
+      <p><strong>Price:</strong> $<%= item.price %></p>
+      <% end %>
+
+  <h3></h3>
+    <form action="/purchases" method="POST">
+      <p></p> 
+        <% @items.each do |item| %>
+          <p><%= item.name %> <input type="number" name="<%= item.name %>" min="0" max="5" value="0"></p>
+        <% end %>  
+      <input class="btn btn-primary" type="submit">
+    </form>
+  </body>
+</html>

@@ -1,3 +1,4 @@
 class GiftCategory < ActiveRecord::Base
-belongs_to :gift, :category
+belongs_to :gift
+belongs_to :category
 end
