@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html>
   <head>
     <title>Gift Hunter</title>
@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-  <form action="/tweets" method="POST">
-    User: <select>
-    <%@users.each do |user| %> 
-    <option>value="<%= user.id %><option>
-    <%end%>
-    </form>
+  
      </body>
 </html>
- -->
+    <form action="/purchases" method="POST">
+      <p></p> 
+        <% @items.each do |item| %>
+          <p><%= item.name %> <input type="number" name="<%= item.name %>" min="0" max="5" value="0"></p>
+        <% end %>  
