@@ -13,5 +13,13 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
-  
+
+  get '/findgift' do
+  	"hello world"
+  end
+
+  get '/suggestgift' do
+  	"Suggesting gifts!!!!"
+  end
+
 end
