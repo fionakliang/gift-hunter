@@ -8,13 +8,7 @@
   <body>
   <h1>Find a Gift</h1>
 
-      <h2>Items</h2>
-      <% @items.each do |item| %>
-      <img src="<%= item.image_url %>">
-      <h3><a href="/items/<%= item.id %>"><%= item.name %></a></h3>
-      <p><strong>Price:</strong> $<%= item.price %></p>
-      <% end %>
-
+    
   <h3></h3>
     <form action="/purchases" method="POST">
       <p></p> 
