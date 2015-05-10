@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-      <h1>Yo</h1>
-     <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Holidays
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
-   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mother's Birthday</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mother's Day</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Father's Birthday</a></li>
-  </ul>
-</div>
-<a href="/actualgift" class="btn btn-lg btn-default">Find Gift</a>
+      <h1>Pick a Holiday</h1>
+   <form method="POST" action="/actualgift">
+   <label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="Mother's Birthday" name="event"> Mother's Birthday
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="Mother's Day" name="event"> Mother's Day
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="Father's Birthday" name="event"> Father's Birthday
+</label>
+<input type="submit" value="Find Gift"> 
+</form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
