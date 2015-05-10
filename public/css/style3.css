@@ -1,0 +1,22 @@
+body {
+  background: url(http://domain.me/wp-content/uploads/2014/12/gifts-in-line.jpg) no-repeat center; 
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 96px;
+  line-height: 1.42857143;
+  padding-top: 120px;
+}

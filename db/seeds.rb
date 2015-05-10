@@ -1,6 +1,5 @@
-
-
-gift_categories = {"Mother's Birthday" =>{"Vineyard White Wine Glasses" => "http://www.crateandbarrel.com/vineyard-white-wine-glasses/f50768",
+gift_categories = {"Mother's Birthday" =>{
+"Vineyard White Wine Glasses" => "http://www.crateandbarrel.com/vineyard-white-wine-glasses/f50768",
 "Vineyard White Wine Glasses" => "http://www.crateandbarrel.com/vineyard-white-wine-glasses/f50768",
 "Vineyard Red Wine Glasses" => "http://www.crateandbarrel.com/vineyard-red-wine-glasses/f50762",
 "Bodum Chambord 34 Ounce French Press" => "http://www.crateandbarrel.com/gift-ideas/gifts-under-50/bodum-chambord-34-ounce-french-press/f16438",
@@ -21,7 +20,7 @@ gift_categories = {"Mother's Birthday" =>{"Vineyard White Wine Glasses" => "http
   "Mother's Day" => { "PANDORA Bracelet & Charms- Mother’s Rose, Moments Collection" => "http://www1.bloomingdales.com/shop/product/pandora-bracelet-charms-mothers-rose-moments-collection?ID=1342085&CategoryID=1004640#fn=spp%3D43%26ppp%3D96%26sp%3D1%26rid%3D%26spc%3D296",
 "Jimmy Choo Mother’s Day Gift Set" => "http://www1.bloomingdales.com/shop/product/jimmy-choo-mothers-day-gift-set?ID=1335035&CategoryID=1004640&LinkType=#fn=spp%3D41%26ppp%3D96%26sp%3D2%26rid%3D%26spc%3D296",
 "DIANE von FURSTENBERG Floral Shadow Hanovar Scarf" => "http://www1.bloomingdales.com/shop/product/diane-von-furstenberg-floral-shadow-hanovar-scarf?ID=1309134&CategoryID=1004640&LinkType=#fn=spp%3D64%26ppp%3D96%26sp%3D2%26rid%3D%26spc%3D296"},
-  "Father's Birthday" => {"Cobra BiO CELL + Driver" => "http://www.golfsmith.com/product/30101039/cobra-bio-cell-driver", 
+"Father's Birthday" => {"Cobra BiO CELL + Driver" => "http://www.golfsmith.com/product/30101039/cobra-bio-cell-driver", 
 "Travel Poker Set" => "http://www.crateandbarrel.com/travel-poker-set/s322453", 
 "Carter Cocktail Shaker"  => "http://www.crateandbarrel.com/carter-cocktail-shaker/s219032",
 "Table Tennis Set" => "http://www.crateandbarrel.com/table-tennis-set/s377466", 
@@ -38,13 +37,14 @@ gift_categories = {"Mother's Birthday" =>{"Vineyard White Wine Glasses" => "http
 "Lugano Kontur" =>"http://www.senacases.com/product/lugano-kontur-iphone-5-5s/",
 "Vita Coco 100% Pure Coconut Water, 16.9 oz, 12 ct" =>  "http://www2.costco.com/Browse/Product.aspx?prodid=11940731&whse=BD_827&topnav=bd"}}
   gift_categories.each do |category, gifts|
-      category = Category.new
-      category.save
+      new_category = Category.new
+      new_category.category_name = category
+      new_category.save
     gifts.each do |name, url|
       gift = Gift.new
       gift.giftname = name
       gift.url = url
-      gift.categories << category 
+      gift.categories << new_category 
       gift.save
     end
   end

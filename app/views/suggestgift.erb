@@ -1,17 +1,27 @@
-<!-- <!doctype html>
+
+<!doctype html>
 <html>
   <head>
-    <title>Gift Hunter</title>
+    <title>Suggest a Gift</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
   </head>
   <body>
-  <form action="/tweets" method="POST">
-    User: <select>
-    <%@users.each do |user| %> 
-    <option>value="<%= user.id %><option>
-    <%end%>
-    </form>
-     </body>
+      <h1> Suggest a Gift! </h1>
+      <h3> Do you think we need a wider range of gift selections? Suggest a gift below! </h3>
+     <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Holidays
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mother's Birthday</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mother's Day</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Father's Birthday</a></li>
+  </ul>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
- -->
