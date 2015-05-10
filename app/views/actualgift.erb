@@ -8,8 +8,7 @@
   <body>
       <h1>Here's a Perfect Gift!</h1>
       <h3> If you don't like this choice, click below to generate another gift. </h3>
-      <%=  @gift.giftname %>
-      </h1>
+      <h2><%=  @gift.giftname %></h2>
       <h2><%= @gift.price %></h2>
       <img src="<%= @gift.photo %>">
       <a href="/actualgift" class="btn btn-lg btn-default"> Another Gift!</a>
