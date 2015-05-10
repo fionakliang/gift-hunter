@@ -1,4 +1,4 @@
-gift_categories = {"Mother's Birthday" =>{
+gift_categories = {"Mothers Birthday" =>{
 "Vineyard White Wine Glasses" => "http://www.crateandbarrel.com/vineyard-white-wine-glasses/f50768",
 "Vineyard White Wine Glasses" => "http://www.crateandbarrel.com/vineyard-white-wine-glasses/f50768",
 "Vineyard Red Wine Glasses" => "http://www.crateandbarrel.com/vineyard-red-wine-glasses/f50762",
@@ -17,10 +17,10 @@ gift_categories = {"Mother's Birthday" =>{
 "Jo Malone Wood Sage & Sea Salt Home Candle" => "http://www1.bloomingdales.com/shop/product/jo-malone-wood-sage-sea-salt-home-candle?ID=1102691&CategoryID=1004640#fn=spp%3D63%26ppp%3D96%26sp%3D1%26rid%3D%26spc%3D296",
 "Eva NYC The Ultimate Glam Gift Set in Hot Pink Zebra" => "http://www.bedbathandbeyond.com/store/product/eva-nyc-the-ultimate-glam-gift-set-in-hot-pink-zebra/1041958322?categoryId=12304",
 "Revlon Perfect Heat Curls to Go Travel Hair Setter" => "http://www.bedbathandbeyond.com/store/product/revlon-reg-perfect-heat-curls-to-go-travel-hair-setter/1042592808?categoryId=12304"},
-  "Mother's Day" => { "PANDORA Bracelet & Charms- Mother’s Rose, Moments Collection" => "http://www1.bloomingdales.com/shop/product/pandora-bracelet-charms-mothers-rose-moments-collection?ID=1342085&CategoryID=1004640#fn=spp%3D43%26ppp%3D96%26sp%3D1%26rid%3D%26spc%3D296",
+  "Mothers Day" => { "PANDORA Bracelet & Charms- Mother’s Rose, Moments Collection" => "http://www1.bloomingdales.com/shop/product/pandora-bracelet-charms-mothers-rose-moments-collection?ID=1342085&CategoryID=1004640#fn=spp%3D43%26ppp%3D96%26sp%3D1%26rid%3D%26spc%3D296",
 "Jimmy Choo Mother’s Day Gift Set" => "http://www1.bloomingdales.com/shop/product/jimmy-choo-mothers-day-gift-set?ID=1335035&CategoryID=1004640&LinkType=#fn=spp%3D41%26ppp%3D96%26sp%3D2%26rid%3D%26spc%3D296",
 "DIANE von FURSTENBERG Floral Shadow Hanovar Scarf" => "http://www1.bloomingdales.com/shop/product/diane-von-furstenberg-floral-shadow-hanovar-scarf?ID=1309134&CategoryID=1004640&LinkType=#fn=spp%3D64%26ppp%3D96%26sp%3D2%26rid%3D%26spc%3D296"},
-"Father's Birthday" => {"Cobra BiO CELL + Driver" => "http://www.golfsmith.com/product/30101039/cobra-bio-cell-driver", 
+"Fathers Birthday" => {"Cobra BiO CELL + Driver" => "http://www.golfsmith.com/product/30101039/cobra-bio-cell-driver", 
 "Travel Poker Set" => "http://www.crateandbarrel.com/travel-poker-set/s322453", 
 "Carter Cocktail Shaker"  => "http://www.crateandbarrel.com/carter-cocktail-shaker/s219032",
 "Table Tennis Set" => "http://www.crateandbarrel.com/table-tennis-set/s377466", 

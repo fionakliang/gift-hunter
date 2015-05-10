@@ -8,8 +8,11 @@
   <body>
       <h1>Here's a Perfect Gift!</h1>
       <h3> If you don't like this choice, click below to generate another gift. </h3>
+      <%=  @gift.giftname %>
+      </h1>
+      <h2><%= @gift.price %></h2>
+      <img src="<%= @gift.photo %>">
       <a href="/actualgift" class="btn btn-lg btn-default"> Another Gift!</a>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
